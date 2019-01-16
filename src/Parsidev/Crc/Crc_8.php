@@ -21,9 +21,7 @@ class Crc_8
         }
 
         $crc = $crc ^ $crcParams->XorOut;
-        $result = new CrcResult();
-        $result->Crc = $crc & 0xFF;
-        return $result;
+        return dechex($crc & 0xFF);
     }
 
     public static function compute($input){
