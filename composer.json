@@ -14,7 +14,7 @@
     },
     "autoload": {
         "psr-0": {
-            "Parsidev\\Socket": "src/"
+            "Parsidev\\Crc": "src/"
         }
     },
     "extra": {
@@ -23,7 +23,7 @@
                 "Parsidev\\Crc\\CrcServiceProvider"
             ],
             "aliases": {
-                "Socket": "Parsidev\\Crc\\Facades"
+                "Crc": "Parsidev\\Crc\\Facades"
             }
         }
 },
