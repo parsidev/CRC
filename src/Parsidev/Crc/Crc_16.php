@@ -45,10 +45,7 @@ class Crc_16
 
         $crc = $crc ^ $crcParams->XorOut;
 
-        $result = new CrcResult();
-        $result->Crc = $crc & 0xFFFF;
-
-        return $result;
+        return dechex($crc & 0xFFFF);
     }
 
     public static function computeArc($input){
