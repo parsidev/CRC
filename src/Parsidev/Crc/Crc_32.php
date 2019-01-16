@@ -30,10 +30,7 @@ class Crc_32
 
         $crc = $crc ^ $crcParams->XorOut;
 
-        $result = new CrcResult();
-        $result->Crc = $crc;
-
-        return $result;
+        return dechex($crc);
     }
 
     public static function compute($input){
